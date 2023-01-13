@@ -5,7 +5,7 @@ from enum import Enum, unique, auto
 class Colors(Enum):
     RED = 10,
     GREEN = 2,
-    BLUE = 10
+    BLUE = 11
 
 
 def f0(a: tuple[str, int]) -> tuple[str, int]:
@@ -29,3 +29,6 @@ if __name__ == '__main__':
         print("Nieprawidłowy kolor")
 
     print(f"{Colors.RED.name}: {Colors.RED.value}")
+    print(Colors(Colors.RED))
+
+    print(Colors(10))

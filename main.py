@@ -1,13 +1,23 @@
 from enum import Enum, unique, auto
 
+
 @unique
 class Colors(Enum):
     RED = 10
     GREEN = 11
     BLUE = 12
 
-def f0() -> tuple[Colors.RED, Colors.BLUE]:
-    return Colors.RED, Colors.GREEN
+    @classmethod
+    def f0(cls):
+        return Colors.BLUE
+
+    @staticmethod
+    def s0():
+        return Colors.RED
+
+
+def f0() -> list[Colors.RED]:
+    return ["sdfsd"]
 
 
 if __name__ == '__main__':

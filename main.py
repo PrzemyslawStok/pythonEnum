@@ -1,15 +1,13 @@
 from enum import Enum, unique, auto
 
-
 @unique
 class Colors(Enum):
-    RED = 10,
-    GREEN = 2,
-    BLUE = 11
+    RED = 10
+    GREEN = 11
+    BLUE = 12
 
-
-def f0(a: tuple[str, int]) -> tuple[str, int]:
-    return "a", 1
+def f0() -> tuple[Colors.RED, Colors.BLUE]:
+    return Colors.RED, Colors.GREEN
 
 
 if __name__ == '__main__':
@@ -18,7 +16,7 @@ if __name__ == '__main__':
 
     print(type(Colors.RED))
 
-    f0(a=("a", 1))
+    print(f0())
 
     colorList = [Colors.RED, Colors.BLUE]
     color0 = Colors.GREEN

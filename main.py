@@ -15,6 +15,10 @@ class Colors(Enum):
     def s0():
         return Colors.RED
 
+    @property
+    def s1(self):
+        return self.RED
+
 
 def f0() -> list[Colors.RED]:
     return ["sdfsd"]
@@ -40,3 +44,5 @@ if __name__ == '__main__':
     print(Colors(Colors.RED))
 
     print(Colors(10))
+
+    color1 = Colors.RED

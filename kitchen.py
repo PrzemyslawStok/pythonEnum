@@ -1,4 +1,4 @@
-from home.room import Room
+from room import Room
 
 class Kitchen(Room):
     pass

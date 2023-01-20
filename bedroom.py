@@ -1,4 +1,9 @@
 from room import Room
 
 class Bedroom(Room):
-    pass
+    def roomArea(self):
+        pass
+
+    def radiatorPower(self):
+        pass
+

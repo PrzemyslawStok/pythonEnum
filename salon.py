@@ -3,8 +3,7 @@ from room import Room
 
 class Salon(Room):
     def __init__(self, a: float, b: float):
-        self.a = a
-        self.b = b
+        super().__init__(a, b)
         self.radiator_power_area = 0.1
 
     def roomArea(self):

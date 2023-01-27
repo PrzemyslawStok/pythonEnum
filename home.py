@@ -26,8 +26,11 @@ class Home:
 if __name__ == '__main__':
     print("Dom")
     salon = Salon(5, 5)
-    kitchen = Kitchen()
+    kitchen = Kitchen(3, 4)
 
     home = Home()
+
     home.addRoom(salon)
+    home.addRoom(kitchen)
+
     print(home.getRadiatorPower())

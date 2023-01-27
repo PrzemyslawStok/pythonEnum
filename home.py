@@ -5,10 +5,10 @@ from salon import Salon
 
 class Home:
     room_list: list[Room]
-    radiator_power = 0
 
     def __init__(self):
         self.room_list = []
+        self.radiator_power = 0
 
     def evaluateRadiatorPower(self):
         self.radiator_power = 0
@@ -19,7 +19,6 @@ class Home:
         self.room_list.append(room)
         self.evaluateRadiatorPower()
 
-    @classmethod
     def getRadiatorPower(self):
         return self.radiator_power
 

@@ -24,6 +24,9 @@ class Home:
         return self.radiator_power
 
     def printHome(self):
+        for room in self.room_list:
+            room.printInfo()
+
         print(f"__________________________________________")
         print(f"powierzchnia całkowita: {0}")
         print(f"całkowite zapotrzebowanie energetyczne: {self.getRadiatorPower()}")

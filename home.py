@@ -23,6 +23,9 @@ class Home:
     def getRadiatorPower(self):
         return self.radiator_power
 
+    def printHome(self):
+        pass
+
 
 if __name__ == '__main__':
     print("Dom")
@@ -36,3 +39,5 @@ if __name__ == '__main__':
     home.addRoom(Bedroom(3, 3))
 
     print(home.getRadiatorPower())
+
+    home.printHome()

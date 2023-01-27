@@ -11,4 +11,4 @@ class Salon(Room):
         return self.a * self.b
 
     def radiatorPower(self):
-        self.roomArea() * self.radiator_power_area
+        return self.roomArea() * self.radiator_power_area

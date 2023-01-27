@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 
+
 class Room(ABC):
     @abstractmethod
-    def roomArea(self):
+    def roomArea(self) -> float:
         pass
+
     @abstractmethod
-    def radiatorPower(self):
+    def radiatorPower(self) -> float:
         pass

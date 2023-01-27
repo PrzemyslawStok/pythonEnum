@@ -24,7 +24,9 @@ class Home:
         return self.radiator_power
 
     def printHome(self):
-        pass
+        print(f"__________________________________________")
+        print(f"powierzchnia całkowita: {0}")
+        print(f"całkowite zapotrzebowanie energetyczne: {self.getRadiatorPower()}")
 
 
 if __name__ == '__main__':
@@ -37,7 +39,5 @@ if __name__ == '__main__':
     home.addRoom(salon)
     home.addRoom(kitchen)
     home.addRoom(Bedroom(3, 3))
-
-    print(home.getRadiatorPower())
 
     home.printHome()

@@ -1,3 +1,4 @@
+from bedroom import Bedroom
 from kitchen import Kitchen
 from room import Room
 from salon import Salon
@@ -32,5 +33,6 @@ if __name__ == '__main__':
 
     home.addRoom(salon)
     home.addRoom(kitchen)
+    home.addRoom(Bedroom(3, 3))
 
     print(home.getRadiatorPower())

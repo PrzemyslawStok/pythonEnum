@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class Room(ABC):
     def __init__(self, a: float, b: float):
         self.radiator_power_area = 0.2

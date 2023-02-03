@@ -1,6 +1,5 @@
 from room import Room
 
-
 class Kitchen(Room):
 
     def __init__(self, a: float, b: float):

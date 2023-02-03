@@ -1,18 +1,21 @@
 class figure2d:
+    a = 100
+    b = 100
+
     def __init__(self, a, b):
         self.a = a
         self.b = b
 
     @staticmethod
     def printInfo():
-        print("figure2d")
+        print(f"info: figure2d")
 
     def printArea(self):
         print(f"area: {self.a * self.b}")
 
     @classmethod
     def printArea_1(cls):
-        print("area: ")
+        print(f"area: {cls.a * cls.b}")
 
 
 if __name__ == "__main__":
@@ -21,3 +24,7 @@ if __name__ == "__main__":
 
     figure.printArea()
     figure1.printArea()
+
+    figure.printArea_1()
+
+    figure2d.printInfo()

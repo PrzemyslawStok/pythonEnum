@@ -1,3 +1,5 @@
+from Figures2D.square import Square
+from Figures2D.triangle import Triangle
 from bedroom import Bedroom
 from kitchen import Kitchen
 from room import Room
@@ -41,6 +43,6 @@ if __name__ == '__main__':
 
     home.addRoom(salon)
     home.addRoom(kitchen)
-    home.addRoom(Bedroom(3, 3))
+    home.addRoom(Bedroom(Square(5)))
 
     home.printHome()

@@ -9,8 +9,7 @@ class Bedroom(Room):
         self.radiator_power_area = 0.5
 
     def roomArea(self):
-        self.base.area()
-        return self.a * self.b
+        return self.base.area()
 
     def radiatorPower(self):
         return self.radiator_power_area * self.roomArea()

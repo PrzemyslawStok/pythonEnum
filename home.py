@@ -26,23 +26,26 @@ class Home:
         return self.radiator_power
 
     def printHome(self):
+        area = 0
         for room in self.room_list:
+            area = area + room.roomArea()
             room.printInfo()
 
         print(f"__________________________________________")
-        print(f"powierzchnia całkowita: {0}")
+        print(f"powierzchnia całkowita: {area}")
         print(f"całkowite zapotrzebowanie energetyczne: {self.getRadiatorPower()}")
 
 
 if __name__ == '__main__':
     print("Dom")
-    salon = Salon(5, 5)
-    kitchen = Kitchen(3, 4)
+    #salon = Salon(5, 5)
+    #kitchen = Kitchen(3, 4)
 
     home = Home()
 
-    home.addRoom(salon)
-    home.addRoom(kitchen)
+    #home.addRoom(salon)
+    #home.addRoom(kitchen)
     home.addRoom(Bedroom(Square(5)))
+    home.addRoom(Bedroom(Square(7)))
 
     home.printHome()

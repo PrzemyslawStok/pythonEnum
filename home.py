@@ -46,6 +46,6 @@ if __name__ == '__main__':
     #home.addRoom(salon)
     #home.addRoom(kitchen)
     home.addRoom(Bedroom(Square(5)))
-    home.addRoom(Bedroom(Square(7)))
+    home.addRoom(Bedroom(Triangle(5)))
 
     home.printHome()

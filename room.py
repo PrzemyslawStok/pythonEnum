@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
+from Figures2D.figure2D import Figure2D
 
 class Room(ABC):
-    def __init__(self, a: float, b: float):
+    def __init__(self, base: Figure2D):
         self.radiator_power_area = 0.2
         self.name = "room"
 
-        self.a = a
-        self.b = b
+        self.base = base
 
     @abstractmethod
     def roomArea(self) -> float:

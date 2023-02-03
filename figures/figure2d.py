@@ -5,11 +5,11 @@ class figure2d:
         print("figure2d")
 
     def printArea(self):
-        pass
+        print("area: ")
 
     @classmethod
     def printArea_1(cls):
-        pass
+        print("area: ")
 
 
 if __name__ == "__main__":

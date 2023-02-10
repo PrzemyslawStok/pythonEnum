@@ -1,5 +1,6 @@
 class Value():
     a = 10
+
     def __init__(self, value: float):
         self.value = value
 
@@ -15,6 +16,9 @@ class Value():
         Value.info()
         print(Value.a)
 
+    @classmethod
+    def printValue_1(cls):
+        print(cls.a)
 
 
 if __name__ == "__main__":
@@ -30,6 +34,7 @@ if __name__ == "__main__":
 
     for number in number_list:
         number.printValue()
-        Value.info()
-        Value.printValues()
+        #Value.info()
+        #Value.printValues()
+        number.printValue_1()
 

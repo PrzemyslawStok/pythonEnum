@@ -1,4 +1,5 @@
 from przyklady.person import Person
 
 class Teacher(Person):
-    pass
+    def __init__(self, name: str, surname: str):
+        super().__init__(name, surname)

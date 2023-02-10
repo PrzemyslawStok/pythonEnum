@@ -1,2 +1,11 @@
+from abc import abstractmethod
+
+
 class Person():
-    pass
+    def __init__(self, name: str, surname: str):
+        self.name = name
+        self.surname = surname
+
+    @abstractmethod
+    def printInfo(self):
+        pass

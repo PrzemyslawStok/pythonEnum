@@ -35,6 +35,9 @@ if __name__ == '__main__':
     colorList = [Colors.RED, Colors.BLUE]
     color0 = Colors.GREEN
 
+    color1 = Colors.GREEN
+    
+
     if color0 in colorList:
         print("Kolor znajduje się na liście")
     else:
@@ -42,6 +45,8 @@ if __name__ == '__main__':
 
     print(f"{Colors.RED.name}: {Colors.RED.value}")
     print(Colors(Colors.RED))
+
+
 
     print(Colors(10))
 

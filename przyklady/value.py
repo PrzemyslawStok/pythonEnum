@@ -1,9 +1,20 @@
 class Value():
+    a = 10
     def __init__(self, value: float):
         self.value = value
 
     def printValue(self):
         print(self.value)
+
+    @staticmethod
+    def info():
+        print(f"Value")
+
+    @staticmethod
+    def printValues():
+        Value.info()
+        print(Value.a)
+
 
 
 if __name__ == "__main__":
@@ -15,5 +26,10 @@ if __name__ == "__main__":
     number_list.append(number0)
     number_list.append(number1)
 
+    Value.a = 20
+
     for number in number_list:
         number.printValue()
+        Value.info()
+        Value.printValues()
+
